@@ -5,8 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
+    @Test public void testAddsTwoNUmber() {
         Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+
+        int result = classUnderTest.add(1, 2);
+
+        assertTrue(result == 3);
+
     }
 }
